@@ -1,6 +1,7 @@
+
 import React, {useEffect, useState } from "react";
 
-function Form({ addTransaction ,edit,updataTransation}) {
+function Content({ addTransaction ,edit,updataTransation}) {
   const [text, settext] = useState();
   const [amount, setamount] = useState();
 
@@ -52,4 +53,4 @@ type="number"
   );
 }
 
-export default Form;
+export default Content;

@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import Navbar from './componets/Navbar'
-import Form from './componets/form'
+
 import Dashboard from './componets/Dashboard'
 
 import Listgroup from './componets/Listgroup';
+import Content from './componets/Content';
 
 
 const Home = () => {
@@ -76,8 +77,8 @@ setedit({
       <Navbar/>
     
 <div className='p-6 w-[100%] md:p-10 w-[90%]'>
-  
-<Form  addTransaction={addTransaction} edit={edit} updataTransation={updataTransation} />
+  <Content  addTransaction={addTransaction} edit={edit} updataTransation={updataTransation} />
+
 <Dashboard Transation={Transation}  />
 
 <Listgroup  Transation={Transation} remove={remove} editTransation={editTransation}  />
